@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "health-management-mod",
+	"version": "${version}",
+	"name": "Health Management Mod",
+	"description": "This is a mod for disincentivizing killing players by reducing health when you kill another player.",
+	"authors": [
+		"dumploid"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/health-management-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dumploid.healthmanagementmod.HealthManagementMod"
+		],
+		"client": [
+			"net.dumploid.healthmanagementmod.HealthManagementModClient"
+		],
+		"fabric-datagen": [
+			"net.dumploid.healthmanagementmod.HealthManagementModDataGenerator"
+		]
+	},
+	"mixins": [
+		"health-management-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
