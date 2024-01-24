@@ -11,7 +11,6 @@ public class HealthManagementMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Started Health Management Mod!");
 	}
 }
