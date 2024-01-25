@@ -10,7 +10,6 @@ public class DeathData {
         deathCount += 1;
 
         nbt.putInt("deathCount", deathCount);
-
     }
 
     public static int getDeathCount(IEntityDataSaver player) {
