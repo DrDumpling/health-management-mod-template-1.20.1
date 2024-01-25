@@ -16,7 +16,7 @@ public class ModEntityDataSaverMixin implements IEntityDataSaver {
     @Override
     public NbtCompound getPersistentData() {
         if(this.persistentData == null) {
-            this.persistentData  = new NbtCompound();
+            this.persistentData = new NbtCompound();
         }
         return persistentData;
     }
