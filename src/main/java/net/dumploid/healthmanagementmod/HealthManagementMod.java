@@ -13,9 +13,11 @@ import org.slf4j.LoggerFactory;
 
 public class HealthManagementMod implements ModInitializer {
 	public static final String MOD_ID = "health_management_mod";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static final GameRules.Key<GameRules.IntRule> MAX_DEATH_COUNT = GameRuleRegistry.register("maxDeathCount", GameRules.Category.PLAYER, GameRuleFactory.createIntRule(1, 1));
+	public static final GameRules.Key<GameRules.IntRule> MAX_DEATH_COUNT = GameRuleRegistry.register(
+			"maxDeathCount", GameRules.Category.PLAYER, GameRuleFactory.createIntRule(1, 1)
+	);
 
 	@Override
 	public void onInitialize() {
